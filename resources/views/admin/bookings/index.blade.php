@@ -35,6 +35,7 @@
                                 <td>
                                     <a href="telp:{{ $booking->nomer_wa }}">{{ $booking->nomer_wa }}</a>
                                 </td>
+                                {{-- @dd($booking) --}}
                                 <td>{{ $booking->car->nama_mobil }}</td>
                                 <td>
                                 <div class="btn-group btn-group-sm">

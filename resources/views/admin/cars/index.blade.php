@@ -36,19 +36,19 @@
                                                 <td>{{ $loop->iteration }}</td>
                                                 <td>{{ $car->nama_mobil }}</td>
                                                 <td>
-                                                    {{-- <a target="_blank" href="{{ Storage::url($car->image) }}">
-                                      <img width="80" src="{{ Storage::url($car->image) }}" alt="">
-                                     
-                                  </a> --}}
+                                                    <a target="_blank" href="{{ Storage::url($car->image) }}">
+                                                        <img width="80" src="{{ Storage::url($car->image) }}"
+                                                            alt="">
+                                                    </a>
 
-                                                    @if ($car->image && Storage::exists($car->image))
+                                                    {{-- @if ($car->image && Storage::exists($car->image))
                                                         <a target="_blank" href="{{ Storage::url($car->image) }}">
                                                             <img width="80" src="{{ Storage::url($car->image) }}"
                                                                 alt="Car Image">
                                                         </a>
                                                     @else
                                                         <p>No image available</p>
-                                                    @endif
+                                                    @endif --}}
 
                                                 </td>
                                                 <td>
